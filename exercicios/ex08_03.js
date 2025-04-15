@@ -1,14 +1,13 @@
 const prompt = require('prompt-sync')();
 
-let letra = 'j'
-let meses = ["Janeiro", "Fevereiro", "Março", "Abril","Maio", "Junho", "Julho", "Agosto","Setembro", "Outubro", "Novembro", "Dezembro"];
+let meses = [
+    "Janeiro", "Fevereiro", "Março", "Abril","Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+];
+let letra = 'J'
 
-for(let i = 0; i < meses.length; i++){
-
-    console.log(meses[i]);
-
-    if (meses[i][0] === letra){
-        console.log(meses[i]);
+for(let mes of meses){
+    if(mes.startsWith(letra)){
+     console.log(mes)
     }
 }
-
