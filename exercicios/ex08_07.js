@@ -3,9 +3,9 @@
 const prompt = require('prompt-sync')();
 
 let carros = 'Gol, Corsa, Palio, Monza, Fusca'
+let listaCarros = carros.split(';')
 
-let listaCarros = carros.split(',')
-for(let carros of listaCarros){
-    console.log(carros);
+listaCarros.pop()
+for(let[posicao, carro] of listaCarros.entries()){
+    console.log(`Posição ${posisão}: ${carro}`)
 }
-
