@@ -2,16 +2,21 @@
 //crie uma função que receba o valor a ser convertido
 //e imprima a conversão em dólar e em euro
 
-let ValorDolar = 5.66
-let ValorEuro =  6.43
+let cotacaoDolar = 5.66
+let cotacaoEuro =  6.43
 
-function conversao(valor){
+function converterMoeda(valorReais){
 
-let Conversão1 = Real / ValorDolar
-let Conversão2 = Real / ValorEuro 
+let valorEmDolar = valorReais / cotacaoDolar
+let valorEmEuro = valorReais / cotacaoDolar
 
+console.log(`R$ ${valorReais.toFixed(2)} equivale a:`)
+console.log(`US$ ${valorEmDolar.toFixed(2)}`)
+console.log(`£ ${valorEmEuro.toFixed(2)}`)
 }
 
-
+converterMoeda(100)
+converterMoeda(50)
+converterMoeda(10)
 
 
